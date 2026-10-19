@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushland - A Cozy Kingdom Building Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF6E3',
+                        warmOrange: '#E8A87C',
+                        deepOrange: '#C38D6B',
+                        forestGreen: '#5B8C5A',
+                        lightGreen: '#8FBC8F',
+                        warmBrown: '#8B7355',
+                        fairyGold: '#DAA520',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="bg-cream text-warmBrown font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-forestGreen to-lightGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">🎨</span> Brushland
+                </a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="hover:text-fairyGold transition-colors font-medium">Home</a>
+                    <a href="building-guide.html" class="hover:text-fairyGold transition-colors font-medium">Buildings</a>
+                    <a href="terrain-guide.html" class="hover:text-fairyGold transition-colors font-medium">Terrain</a>
+                    <a href="tips.html" class="hover:text-fairyGold transition-colors font-medium">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-warmOrange/20 to-cream"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-20 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-forestGreen mb-6">
+                Welcome to Brushland
+            </h1>
+            <p class="text-xl md:text-2xl text-warmBrown mb-4 max-w-3xl mx-auto">
+                Draw your kingdom into existence with magical brushstrokes
+            </p>
+            <p class="text-lg text-deepOrange mb-10">
+                A cozy sandbox kingdom builder by Transhuman Design
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <span class="bg-forestGreen text-white px-4 py-2 rounded-full text-sm font-medium">Windows</span>
+                <span class="bg-forestGreen text-white px-4 py-2 rounded-full text-sm font-medium">Mac</span>
+                <span class="bg-forestGreen text-white px-4 py-2 rounded-full text-sm font-medium">Linux</span>
+                <span class="bg-forestGreen text-white px-4 py-2 rounded-full text-sm font-medium">Steam Deck</span>
+            </div>
+            <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl max-w-4xl mx-auto border border-warmOrange/30">
+                <h2 class="text-3xl font-bold text-forestGreen mb-4">Paint. Build. Relax.</h2>
+                <p class="text-lg text-warmBrown leading-relaxed">
+                    In Brushland, you wield a magical brush that brings landscapes to life. Draw mountains, rivers, and valleys — then watch as charming buildings and villages grow automatically from your creation. No combat, no death, just pure creative relaxation in a hand-drawn fairy tale world.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center text-forestGreen mb-12">How It Works</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-warmOrange/20 hover:shadow-xl transition-shadow">
+                <div class="text-5xl mb-4">🖌️</div>
+                <h3 class="text-xl font-bold text-forestGreen mb-3">Draw Terrain</h3>
+                <p class="text-warmBrown">
+                    Use your brush to paint mountains, rivers, forests, and meadows. Each stroke shapes the land with organic, natural lines.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-warmOrange/20 hover:shadow-xl transition-shadow">
+                <div class="text-5xl mb-4">🏠</div>
+                <h3 class="text-xl font-bold text-forestGreen mb-3">Buildings Grow</h3>
+                <p class="text-warmBrown">
+                    Watch as cozy cottages, mills, farms, and villages spring up based on your terrain. Rivers bring mills, hills host watchtowers.
+                </p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-warmOrange/20 hover:shadow-xl transition-shadow">
+                <div class="text-5xl mb-4">🌸</div>
+                <h3 class="text-xl font-bold text-forestGreen mb-3">Create Harmony</h3>
+                <p class="text-warmBrown">
+                    Balance your kingdom's needs by drawing complementary terrain. Forests attract wildlife, water enables fisheries, plains grow farms.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features Grid -->
+    <section class="bg-gradient-to-b from-cream to-warmOrange/10 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-forestGreen mb-12">Game Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-3">🎨</div>
+                    <h3 class="font-bold text-forestGreen">Hand-Drawn Art</h3>
+                    <p class="text-sm text-warmBrown mt-2">Beautiful fairy tale aesthetic with watercolor textures</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-3">🌊</div>
+                    <h3 class="font-bold text-forestGreen">Dynamic Water</h3>
+                    <p class="text-sm text-warmBrown mt-2">Rivers flow and lakes shimmer realistically</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-3">🏘️</div>
+                    <h3 class="font-bold text-forestGreen">Auto-Building</h3>
+                    <p class="text-sm text-warmBrown mt-2">Structures appear organically based on terrain</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-3">☁️</div>
+                    <h3 class="font-bold text-forestGreen">Peaceful Ambiance</h3>
+                    <p class="text-sm text-warmBrown mt-2">No stress, no enemies, just creative calm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <div class="bg-gradient-to-r from-forestGreen to-lightGreen rounded-2xl p-10 text-white shadow-xl">
+            <h2 class="text-3xl font-bold mb-4">Ready to Create Your Kingdom?</h2>
+            <p class="text-lg mb-6 opacity-90">
+                Brushland is available on Steam for Windows, Mac, Linux, and Steam Deck.
+            </p>
+            <a href="#" class="inline-block bg-white text-forestGreen font-bold px-8 py-4 rounded-full hover:bg-cream transition-colors shadow-lg">
+                View on Steam
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warmBrown text-cream py-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Brushland</h3>
+                    <p class="text-cream/80">
+                        A cozy kingdom building experience where your brush brings worlds to life.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="building-guide.html" class="hover:text-fairyGold transition-colors">Building Guide</a></li>
+                        <li><a href="terrain-guide.html" class="hover:text-fairyGold transition-colors">Terrain Guide</a></li>
+                        <li><a href="tips.html" class="hover:text-fairyGold transition-colors">Kingdom Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">About</h3>
+                    <p class="text-cream/80">
+                        Developed by <strong>Transhuman Design</strong><br>
+                        A relaxing creative experience for all ages.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 pt-6 text-center text-cream/60 text-sm">
+                <p>&copy; 2026 Brushland Wiki. Fan-made guide. Not affiliated with Transhuman Design.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

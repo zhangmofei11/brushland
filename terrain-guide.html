@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain Guide - Brushland Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF6E3',
+                        warmOrange: '#E8A87C',
+                        deepOrange: '#C38D6B',
+                        forestGreen: '#5B8C5A',
+                        lightGreen: '#8FBC8F',
+                        warmBrown: '#8B7355',
+                        fairyGold: '#DAA520',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="bg-cream text-warmBrown font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-forestGreen to-lightGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">🎨</span> Brushland
+                </a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="hover:text-fairyGold transition-colors font-medium">Home</a>
+                    <a href="building-guide.html" class="hover:text-fairyGold transition-colors font-medium">Buildings</a>
+                    <a href="terrain-guide.html" class="hover:text-fairyGold transition-colors font-medium">Terrain</a>
+                    <a href="tips.html" class="hover:text-fairyGold transition-colors font-medium">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-forestGreen/20 to-lightGreen/10 py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-forestGreen mb-4">Terrain Guide</h1>
+            <p class="text-xl text-warmBrown max-w-2xl mx-auto">
+                Master the art of landscape painting to create thriving kingdoms with balanced terrain.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Terrain Types -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8">Terrain Types</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-green-600 to-green-800 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">🌲</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Forests</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Dense woodland areas filled with tall trees. Attracts wildlife, provides lumber, and creates a peaceful atmosphere.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Sawmills, hunting lodges, nature retreats</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-blue-400 to-blue-600 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">💧</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Rivers</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Flowing water that snakes through the landscape. Essential for mills, fisheries, and irrigation.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Water mills, fisheries, bridges, bathhouses</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-blue-300 to-blue-500 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">🏞️</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Lakes</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Still bodies of water that reflect the sky. Perfect for fisheries, bathhouses, and scenic views.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Fisheries, lighthouses, vacation homes</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-amber-600 to-stone-600 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">⛰️</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Mountains</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Towering peaks with rocky terrain. Great for quarries, watchtowers, and dramatic scenery.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Quarries, watchtowers, mountain villages</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-amber-300 to-amber-500 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">🌾</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Plains</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Flat, open grasslands perfect for farming and large settlements. The foundation of any kingdom.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Farms, manors, markets, any building</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-gradient-to-br from-lime-500 to-emerald-600 text-white w-16 h-16 rounded-lg flex items-center justify-center text-3xl">🌳</div>
+                        <h3 class="text-xl font-bold text-forestGreen">Hills</h3>
+                    </div>
+                    <p class="text-warmBrown mb-4">
+                        Rolling elevated terrain between plains and mountains. Ideal for varied development.
+                    </p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best for: Orchards, windmills, churches, cottages</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terrain Combinations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8">Terrain Combinations</h2>
+            <p class="text-warmBrown mb-6 text-lg">
+                The magic of Brushland comes from combining terrain types. Here are some winning combinations:
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-br from-blue-400/20 to-green-600/20 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">River Valley</h3>
+                    <p class="text-sm text-warmBrown">River + Hills = Stunning valleys with mills and villages</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-400/20 to-amber-300/30 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">Fertile Plains</h3>
+                    <p class="text-sm text-warmBrown">Plains + River = Rich farmland and abundant harvests</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-600/20 to-stone-600/30 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">Forest Edge</h3>
+                    <p class="text-sm text-warmBrown">Forest + Hills = Lumber villages with scenic views</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-300/20 to-blue-400/20 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">Lakeside Paradise</h3>
+                    <p class="text-sm text-warmBrown">Lake + Plains = Fishing villages and vacation retreats</p>
+                </div>
+                <div class="bg-gradient-to-br from-stone-600/20 to-green-600/20 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">Mountain Fortress</h3>
+                    <p class="text-sm text-warmBrown">Mountain + Hills = Quaint mountain towns and temples</p>
+                </div>
+                <div class="bg-gradient-to-br from-amber-300/20 to-green-600/20 rounded-xl p-5 border border-forestGreen/30">
+                    <h3 class="font-bold text-forestGreen mb-2">Meadow Village</h3>
+                    <p class="text-sm text-warmBrown">Plains + Forest = pastoral villages with varied economy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drawing Tips -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8">Drawing Techniques</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-warmOrange mb-4">Organic Lines</h3>
+                    <p class="text-warmBrown">
+                        Unlike geometric shapes, terrain in Brushland benefits from organic, flowing brushstrokes. Let your brush curves follow natural patterns like real rivers and mountain ranges.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-warmOrange mb-4">Gradual Transitions</h3>
+                    <p class="text-warmBrown">
+                        Create smooth transitions between terrain types. A forest shouldn't abruptly end — let it fade into hills or plains for a natural feel.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-warmOrange mb-4">Layering</h3>
+                    <p class="text-warmBrown">
+                        Build terrain in layers. Start with the base (plains or water), then add elevation (hills, mountains), and finish with details (forests, small streams).
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-warmOrange mb-4">Scale Matters</h3>
+                    <p class="text-warmBrown">
+                        Consider the scale of your terrain. Wide rivers support more fisheries, large forests attract more wildlife, and vast plains can sustain major cities.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biome Tips -->
+        <section class="bg-gradient-to-r from-forestGreen/10 to-lightGreen/10 rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-forestGreen mb-6">Biome Planning Tips</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Start with water</strong> — Drawing rivers or lakes first helps define other terrain boundaries naturally.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Balance is key</strong> — A healthy kingdom has a mix of plains (for farms), water (for production), and forests (for resources).</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Consider flow</strong> — Rivers should flow naturally from mountains to lakes or off-map. Avoid crossing rivers back on themselves.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Leave room to grow</strong> — Reserve some plains areas for future expansion as your kingdom develops.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Create natural borders</strong> — Use mountain ranges or forests to separate different regions of your kingdom.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-warmBrown text-cream py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Brushland</h3>
+                    <p class="text-cream/80">
+                        A cozy kingdom building experience where your brush brings worlds to life.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-fairyGold transition-colors">Home</a></li>
+                        <li><a href="building-guide.html" class="hover:text-fairyGold transition-colors">Building Guide</a></li>
+                        <li><a href="tips.html" class="hover:text-fairyGold transition-colors">Kingdom Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">About</h3>
+                    <p class="text-cream/80">
+                        Developed by <strong>Transhuman Design</strong><br>
+                        A relaxing creative experience for all ages.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 pt-6 text-center text-cream/60 text-sm">
+                <p>&copy; 2026 Brushland Wiki. Fan-made guide. Not affiliated with Transhuman Design.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

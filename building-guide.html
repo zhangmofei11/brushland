@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Guide - Brushland Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF6E3',
+                        warmOrange: '#E8A87C',
+                        deepOrange: '#C38D6B',
+                        forestGreen: '#5B8C5A',
+                        lightGreen: '#8FBC8F',
+                        warmBrown: '#8B7355',
+                        fairyGold: '#DAA520',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="bg-cream text-warmBrown font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-forestGreen to-lightGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">🎨</span> Brushland
+                </a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="hover:text-fairyGold transition-colors font-medium">Home</a>
+                    <a href="building-guide.html" class="hover:text-fairyGold transition-colors font-medium">Buildings</a>
+                    <a href="terrain-guide.html" class="hover:text-fairyGold transition-colors font-medium">Terrain</a>
+                    <a href="tips.html" class="hover:text-fairyGold transition-colors font-medium">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-warmOrange/30 to-deepOrange/20 py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-forestGreen mb-4">Building Guide</h1>
+            <p class="text-xl text-warmBrown max-w-2xl mx-auto">
+                Discover all the charming structures that grow in your kingdom and learn which terrain summons each one.
+            </p>
+        </div>
+    </header>
+
+    <!-- Building Categories -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Residential Buildings -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-forestGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">🏠</span>
+                Residential Buildings
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Cottage</h3>
+                    <p class="text-sm text-warmBrown mb-4">A cozy small home with a thatched roof, perfect for any village.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Plains, gentle hills</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Manor House</h3>
+                    <p class="text-sm text-warmBrown mb-4">A larger estate home with a stone foundation and elegant design.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Hills, flat plains areas</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Village Hall</h3>
+                    <p class="text-sm text-warmBrown mb-4">The heart of community life, appears in larger settlements.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Central village areas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Buildings -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-forestGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">⚒️</span>
+                Production Buildings
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Water Mill</h3>
+                    <p class="text-sm text-warmBrown mb-4">A rustic mill powered by flowing water, grinding grain into flour.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: River or stream nearby</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Farm</h3>
+                    <p class="text-sm text-warmBrown mb-4">Golden fields of wheat and crops stretching to the horizon.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Flat plains, near water</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Orchard</h3>
+                    <p class="text-sm text-warmBrown mb-4">Fruit trees in neat rows, providing fresh produce year after year.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Hillsides, mixed terrain</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Sawmill</h3>
+                    <p class="text-sm text-warmBrown mb-4">A workshop for processing lumber from nearby forests.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: Forest or trees nearby</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Fishery</h3>
+                    <p class="text-sm text-warmBrown mb-4">A dockside building for catching fish from lakes and rivers.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: Lake or wide river</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Quarry</h3>
+                    <p class="text-sm text-warmBrown mb-4">Stone extraction site for building materials.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Mountains, rocky terrain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Buildings -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-forestGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">🏪</span>
+                Service Buildings
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Inn</h3>
+                    <p class="text-sm text-warmBrown mb-4">A welcoming tavern with warm lights and comfortable rooms for travelers.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Roads, village centers</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Bakery</h3>
+                    <p class="text-sm text-warmBrown mb-4">The smell of fresh bread fills the air around this charming shop.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Residential areas</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Church</h3>
+                    <p class="text-sm text-warmBrown mb-4">A peaceful chapel with a bell tower reaching toward the sky.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Hills, elevated areas</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">School</h3>
+                    <p class="text-sm text-warmBrown mb-4">Where young minds learn reading, writing, and arithmetic.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Village centers, homes</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Market</h3>
+                    <p class="text-sm text-warmBrown mb-4">Colorful stalls selling goods from across the kingdom.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Central locations, roads</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Bathhouse</h3>
+                    <p class="text-sm text-warmBrown mb-4">A relaxing communal bath with steaming hot water.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: Near water source</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Buildings -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-forestGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">🏰</span>
+                Decorative & Landmark Buildings
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Windmill</h3>
+                    <p class="text-sm text-warmBrown mb-4">An iconic spinning windmill overlooking the countryside.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Hills, open plains</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Watchtower</h3>
+                    <p class="text-sm text-warmBrown mb-4">A tall tower offering panoramic views of the kingdom.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Hills, mountain edges</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Fountain</h3>
+                    <p class="text-sm text-warmBrown mb-4">An elegant stone fountain with splashing water.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Village squares, plazas</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Bridge</h3>
+                    <p class="text-sm text-warmBrown mb-4">A charming arched bridge crossing rivers and streams.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: River crossing point</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Statue</h3>
+                    <p class="text-sm text-warmBrown mb-4">A decorative statue honoring the kingdom's heritage.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Best near: Town squares, parks</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-xl font-bold text-forestGreen mb-2">Lighthouse</h3>
+                    <p class="text-sm text-warmBrown mb-4">A coastal beacon guiding ships safely to shore.</p>
+                    <div class="bg-cream rounded-lg p-3">
+                        <p class="text-sm font-medium text-deepOrange">Requires: Coastal shoreline</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Building Tips -->
+        <section class="bg-gradient-to-r from-forestGreen/10 to-lightGreen/10 rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-forestGreen mb-6">Building Tips</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Cluster similar buildings</strong> — Placing multiple farms near each other creates agricultural districts.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Follow water</strong> — Production buildings like mills, fisheries, and bakeries thrive near water sources.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Elevate important buildings</strong> — Churches and watchtowers look magnificent on hills and elevated terrain.</p>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-fairyGold text-xl">✦</span>
+                    <p class="text-warmBrown"><strong class="text-forestGreen">Create districts</strong> — Group residential, production, and service buildings for realistic-feeling towns.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-warmBrown text-cream py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Brushland</h3>
+                    <p class="text-cream/80">
+                        A cozy kingdom building experience where your brush brings worlds to life.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-fairyGold transition-colors">Home</a></li>
+                        <li><a href="terrain-guide.html" class="hover:text-fairyGold transition-colors">Terrain Guide</a></li>
+                        <li><a href="tips.html" class="hover:text-fairyGold transition-colors">Kingdom Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">About</h3>
+                    <p class="text-cream/80">
+                        Developed by <strong>Transhuman Design</strong><br>
+                        A relaxing creative experience for all ages.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 pt-6 text-center text-cream/60 text-sm">
+                <p>&copy; 2026 Brushland Wiki. Fan-made guide. Not affiliated with Transhuman Design.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
