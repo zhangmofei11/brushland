@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushland Walkthrough - Building Your First Kingdom Step by Step</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDF6E3',
+                        warmOrange: '#E8A87C',
+                        deepOrange: '#C38D6B',
+                        forestGreen: '#5B8C5A',
+                        lightGreen: '#8FBC8F',
+                        warmBrown: '#8B7355',
+                        fairyGold: '#DAA520',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2G0HXX98QT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2G0HXX98QT');
+    </script>
+    <meta name="description" content="Brushland walkthrough for beginners: how to lay out your first village, when to add a river, which buildings to unlock, and how to grow a kingdom that looks great.">
+    <meta name="keywords" content="Brushland walkthrough, Brushland beginner guide, Brushland first village, how to play Brushland, Brushland kingdom layout, Brushland building order">
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://brushland.site/#website",
+          "name": "Brushland",
+          "url": "https://brushland.site/",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://brushland.site/walkthrough.html#webpage",
+          "url": "https://brushland.site/walkthrough.html",
+          "name": "Brushland Walkthrough - Building Your First Kingdom Step by Step",
+          "description": "Brushland walkthrough for beginners: how to lay out your first village, when to add a river, which buildings to unlock, and how to grow a kingdom that looks great.",
+          "isPartOf": {
+            "@id": "https://brushland.site/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://brushland.site/walkthrough.html#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://brushland.site/walkthrough.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://brushland.site/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Brushland Walkthrough - Building Your First Kingdom Step by Step"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-cream text-warmBrown font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-forestGreen to-lightGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">🎨</span> Brushland
+                </a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="hover:text-fairyGold transition-colors font-medium">Home</a>
+                    <a href="building-guide.html" class="hover:text-fairyGold transition-colors font-medium">Buildings</a>
+                    <a href="terrain-guide.html" class="hover:text-fairyGold transition-colors font-medium">Terrain</a>
+                    <a href="tips.html" class="hover:text-fairyGold transition-colors font-medium">Tips</a>
+                    <a href="pro-tips.html" class="hover:text-fairyGold transition-colors font-medium">Pro Tips</a>
+                    <a href="walkthrough.html" class="hover:text-fairyGold transition-colors font-medium">Walkthrough</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-fairyGold/30 to-warmOrange/20 py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-forestGreen mb-4">Brushland Walkthrough</h1>
+            <p class="text-xl text-warmBrown max-w-2xl mx-auto">
+                A step-by-step route from an empty canvas to a full, living kingdom.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- Before you start -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-fairyGold text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">🎯</span>
+                Before You Draw Anything
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg border border-warmOrange/20 mb-6">
+                <h3 class="text-2xl font-bold text-forestGreen mb-4">How Brushland Actually Works</h3>
+                <p class="text-warmBrown mb-4">
+                    Nothing in Brushland is placed by hand. You do not select a cottage and drop it on a
+                    tile. You paint terrain, and the world decides what belongs there. A cottage
+                    appears on flat plains, a water mill where a river runs, a watchtower on high ground.
+                </p>
+                <p class="text-warmBrown mb-4">
+                    This is the single most important thing to understand before you start, because it
+                    means your brush strokes are not decoration. They are the building order.
+                </p>
+                <ul class="space-y-2 text-warmBrown ml-4 list-disc">
+                    <li>Paint the shape of the land first, then let the buildings find their own places</li>
+                    <li>Every building has terrain requirements. Check them before repainting a region</li>
+                    <li>Growth takes a moment, so wait for structures to settle before judging a result</li>
+                    <li>There is no failure state, so experiment freely and keep the versions you like</li>
+                </ul>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Pick a Theme</h3>
+                    <p class="text-warmBrown">
+                        Decide the mood before the first stroke. A quiet fishing hamlet, a busy river
+                        market, or a mountain watchtower village each need a different land shape. Write
+                        the theme down.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Start Small</h3>
+                    <p class="text-warmBrown">
+                        Your first map should be small enough to hold in your head. Build a working
+                        village first, then scale the recipe up.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Learn the Brush</h3>
+                    <p class="text-warmBrown">
+                        Get comfortable with brush size, pressure and undo before you design anything
+                        serious. Every stroke is harder to undo once buildings have grown on it.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 1 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-forestGreen text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">1️⃣</span>
+                Stage 1: The First Settlement
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg border border-warmOrange/20 mb-6 overflow-x-auto">
+                <h3 class="text-2xl font-bold text-forestGreen mb-4">The Starting Build</h3>
+                <table class="w-full text-sm min-w-[600px]">
+                    <thead>
+                        <tr class="text-left text-warmOrange border-b border-warmOrange/30">
+                            <th class="py-3 pr-4">Step</th>
+                            <th class="py-3 pr-4">Paint This</th>
+                            <th class="py-3 pr-4">Expected Result</th>
+                            <th class="py-3">Why</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-warmBrown">
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">1</td>
+                            <td class="py-3 pr-4">A broad plain area</td>
+                            <td class="py-3 pr-4">Cottages and the first small farm</td>
+                            <td class="py-3 pr-4">Plains support housing and food, so start there</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">2</td>
+                            <td class="py-3 pr-4">A short river with a gentle slope</td>
+                            <td class="py-3 pr-4">A water mill appears beside the flow</td>
+                            <td class="py-3 pr-4">Water drives mills and links the map visually</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">3</td>
+                            <td class="py-3 pr-4">Low hills along one edge</td>
+                            <td class="py-3 pr-4">Orchards and a windmill</td>
+                            <td class="py-3 pr-4">Hills add vertical variety to a flat plain</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">4</td>
+                            <td class="py-3 pr-4">A small forest patch</td>
+                            <td class="py-3 pr-4">A sawmill at the forest edge</td>
+                            <td class="py-3 pr-4">Forest supplies lumber for later construction</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-bold">5</td>
+                            <td class="py-3 pr-4">Flat ground beside the river</td>
+                            <td class="py-3 pr-4">Farm fields and a road network</td>
+                            <td class="py-3 pr-4">Farms need flat plains and water</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                <h3 class="font-bold text-warmOrange mb-2">Checkpoint: your first village</h3>
+                <p class="text-warmBrown">
+                    You have a working settlement when you have cottages for the population, at least
+                    one farm producing food, and a mill or sawmill. Do not add more terrain yet.
+                    Zoom out and decide whether the composition works before you commit.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stage 2 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-warmOrange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">2️⃣</span>
+                Stage 2: Water and the Fishery
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Build a Lake</h3>
+                    <p class="text-warmBrown mb-3">
+                        A lake needs real width to support a fishery. Draw one with a broad brush and
+                        give it time to settle into a rounded shape rather than forcing it.
+                    </p>
+                    <ul class="space-y-1 text-warmBrown ml-4 list-disc">
+                        <li>Wide lake, not a narrow puddle</li>
+                        <li>Flat plains or meadow right at the shore</li>
+                        <li>A fishery appears once the water body is large enough</li>
+                        <li>A lighthouse needs a shoreline rather than open water</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Connect the Water</h3>
+                    <p class="text-warmBrown mb-3">
+                        Rivers and lakes should belong to the same system. Extend your existing river
+                        down to the lake so the map reads as one landscape.
+                    </p>
+                    <ul class="space-y-1 text-warmBrown ml-4 list-disc">
+                        <li>Draw the slope first, then extend the channel</li>
+                        <li>Two or three tributaries beat four separate rivers</li>
+                        <li>Put a bridge where a road crosses the flow</li>
+                        <li>Add a bathhouse near water but away from the farms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 3 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-deepOrange text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">3️⃣</span>
+                Stage 3: Districts and Amenities
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg border border-warmOrange/20 mb-6">
+                <h3 class="text-2xl font-bold text-forestGreen mb-4">Organising the Kingdom</h3>
+                <p class="text-warmBrown mb-4">
+                    Once the basics work, stop painting and start arranging. How you group amenities
+                    decides whether the kingdom looks deliberate.
+                </p>
+                <ul class="space-y-3 text-warmBrown ml-4">
+                    <li class="flex items-start gap-2">
+                        <span class="text-fairyGold">•</span>
+                        <span><strong>Residential quarter:</strong> cottages and manor houses on flat plains, ideally near the farm fields and the mill.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-fairyGold">•</span>
+                        <span><strong>Village centre:</strong> a village hall, market and fountain clustered where paths converge. This becomes your focal point.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-fairyGold">•</span>
+                        <span><strong>Elevated quarter:</strong> a church and a watchtower on the hills, giving the kingdom a landmark above the rooftops.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-fairyGold">•</span>
+                        <span><strong>Working edge:</strong> quarries in the mountains and sawmills at the forest border, placed where they need their raw material.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                <h3 class="font-bold text-warmOrange mb-2">Checkpoint: a lived-in kingdom</h3>
+                <p class="text-warmBrown">
+                    Your kingdom is functionally complete when it has housing, food, lumber, stone and
+                    at least a few amenities. Everything after this point is design refinement rather
+                    than survival.
+                </p>
+            </div>
+        </section>
+
+        <!-- Stage 4 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-purple-400 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">4️⃣</span>
+                Stage 4: Growing the Map
+            </h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Extend, Do Not Scatter</h3>
+                    <p class="text-warmBrown">
+                        When you grow beyond your first village, extend from an existing district rather
+                        than starting somewhere new. A river that continues off the edge of your map
+                        keeps the composition coherent.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Frame the Map</h3>
+                    <p class="text-warmBrown">
+                        Add a mountain range along one edge and dense forest along another. These read
+                        as natural boundaries and make the kingdom feel contained, which is what a
+                        finished painting needs.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg border border-warmOrange/20">
+                    <h3 class="text-lg font-bold text-warmOrange mb-3">Add Landmarks</h3>
+                    <p class="text-warmBrown">
+                        A statue in a small square, a fountain beside the main path, a lighthouse on the
+                        far shore. One landmark per region is enough. More than that and the map starts
+                        to look decorated rather than designed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage 5 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-forestGreen mb-8 flex items-center gap-3">
+                <span class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">5️⃣</span>
+                Stage 5: The Final Polish
+            </h2>
+            <div class="bg-white rounded-xl p-8 shadow-lg border border-warmOrange/20 mb-6 overflow-x-auto">
+                <h3 class="text-2xl font-bold text-forestGreen mb-4">Pre-Screenshot Checklist</h3>
+                <table class="w-full text-sm min-w-[600px]">
+                    <thead>
+                        <tr class="text-left text-warmOrange border-b border-warmOrange/30">
+                            <th class="py-3 pr-4">Check</th>
+                            <th class="py-3 pr-4">What Good Looks Like</th>
+                            <th class="py-3">Fix If Not</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-warmBrown">
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">Focal point</td>
+                            <td class="py-3 pr-4">One clear centre the eye lands on first</td>
+                            <td class="py-3 pr-4">Add a village hall, fountain or statue at the hub</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">Flow</td>
+                            <td class="py-3 pr-4">A visible route through the kingdom</td>
+                            <td class="py-3 pr-4">Extend the river or a road toward the centre</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">Transitions</td>
+                            <td class="py-3 pr-4">Soft borders between terrain types</td>
+                            <td class="py-3 pr-4">Overlap strokes and blend the edges</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">Balance</td>
+                            <td class="py-3 pr-4">Dense areas counterbalanced by open space</td>
+                            <td class="py-3 pr-4">Leave a meadow gap between two clusters</td>
+                        </tr>
+                        <tr class="border-b border-warmOrange/10">
+                            <td class="py-3 pr-4 font-bold">Resource coverage</td>
+                            <td class="py-3 pr-4">Farm, mill, sawmill and quarry all present</td>
+                            <td class="py-3 pr-4">Expand the matching terrain</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-bold">Frame</td>
+                            <td class="py-3 pr-4">Two map edges closed off naturally</td>
+                            <td class="py-3 pr-4">Add mountains or dense forest along the open edges</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-gradient-to-r from-forestGreen to-lightGreen rounded-2xl p-8 text-white">
+                <h2 class="text-2xl font-bold mb-4">Enjoy the Process</h2>
+                <p class="opacity-90">
+                    There is no fail state in Brushland and no enemy to defeat. If a map does not look
+                    right, undo it and try a different arrangement. The best kingdoms took the most
+                    second attempts.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-warmBrown text-cream py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Brushland</h3>
+                    <p class="text-cream/80">
+                        A cozy kingdom building experience where your brush brings worlds to life.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-fairyGold transition-colors">Home</a></li>
+                        <li><a href="building-guide.html" class="hover:text-fairyGold transition-colors">Building Guide</a></li>
+                        <li><a href="terrain-guide.html" class="hover:text-fairyGold transition-colors">Terrain Guide</a></li>
+                        <li><a href="tips.html" class="hover:text-fairyGold transition-colors">Kingdom Tips</a></li>
+                        <li><a href="pro-tips.html" class="hover:text-fairyGold transition-colors">Pro Tips</a></li>
+                        <li><a href="walkthrough.html" class="hover:text-fairyGold transition-colors">Walkthrough</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-fairyGold">About</h3>
+                    <p class="text-cream/80">
+                        Developed by <strong>Transhuman Design</strong><br>
+                        A relaxing creative experience for all ages.
+                    </p>
+                </div>
+            </div>
+            <!-- Adsterra Ads -->
+            <script async="async" data-cfasync="false" src="https://bauval.org/21/f0c2ea07958f7b42d61c9fbccc94d79d"></script>
+            <div id="container-f0c2ea07958f7b42d61c9fbccc94d79d"></div>
+
+            <script data-cfasync="false" src="https://bauval.org/14/a4d098e91661ffda6bcd4bbd2ad4ff0b"></script>
+
+            <script>
+              atOptions = {
+                'key' : '9f4eedefdd23f45370e8cd5de3c4fbfe',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bauval.org/22/9f4eedefdd23f45370e8cd5de3c4fbfe"></script>
+
+            <div class="border-t border-cream/20 pt-6 text-center text-cream/60 text-sm">
+                <p>&copy; 2026 Brushland Wiki. Fan-made guide. Not affiliated with Transhuman Design.</p>
+            </div>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-4xl mx-auto py-8 px-4 border-t border-amber-900">
+        <h3 class="text-xl font-bold mb-4 text-white">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="pro-tips.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Pro Tips - Brushland Wiki</span>
+        </a>
+        <a href="index.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Brushland - A Cozy Kingdom Building Game</span>
+        </a>
+        <a href="building-guide.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Building Guide - Brushland Wiki</span>
+        </a>
+        <a href="terrain-guide.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Terrain Guide - Brushland Wiki</span>
+        </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
